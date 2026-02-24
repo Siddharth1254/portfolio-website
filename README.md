@@ -1,6 +1,6 @@
 # Siddharth Taurani — Portfolio
 
-> **Live:** [your-domain.com](https://your-domain.com)
+> **Live:** [siddharth-taurani.vercel.app](https://siddharth-taurani.vercel.app/)
 
 Personal portfolio website showcasing my projects, experience, and skills in AI/ML engineering.
 
