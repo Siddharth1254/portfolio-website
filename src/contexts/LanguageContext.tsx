@@ -17,6 +17,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.experience': 'Experience',
     'nav.projects': 'Projects',
     'nav.skills': 'Skills',
+    'nav.certifications': 'Certifications',
     'nav.contact': 'Contact',
 
     // Hero
@@ -150,6 +151,11 @@ const translations: Record<Language, Record<string, string>> = {
     'skills.tools': 'Visualization',
     'skills.responsible': 'Responsible AI',
 
+    // Certifications
+    'certifications.title': 'Certifications',
+    'certifications.cert1.name': 'Retrieval Augmented Generation (RAG)',
+    'certifications.cert1.issuer': 'DeepLearning.AI',
+
     // Contact
     'contact.title': 'Get in Touch',
     'contact.description1': 'I\'m currently seeking an alternance opportunity in AI / ML engineering starting Summer 2026.',
@@ -169,6 +175,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.experience': 'Expérience',
     'nav.projects': 'Projets',
     'nav.skills': 'Compétences',
+    'nav.certifications': 'Certifications',
     'nav.contact': 'Contact',
 
     // Hero
@@ -301,6 +308,11 @@ const translations: Record<Language, Record<string, string>> = {
     'skills.mlops': 'MLOps & Outils',
     'skills.tools': 'Visualisation',
     'skills.responsible': 'IA Responsable',
+
+    // Certifications
+    'certifications.title': 'Certifications',
+    'certifications.cert1.name': 'Génération Augmentée par Récupération (RAG)',
+    'certifications.cert1.issuer': 'DeepLearning.AI',
 
     // Contact
     'contact.title': 'Me Contacter',

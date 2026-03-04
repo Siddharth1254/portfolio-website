@@ -17,6 +17,7 @@ const Navigation = () => {
     { key: 'nav.education', href: '#education' },
     { key: 'nav.experience', href: '#experience' },
     { key: 'nav.projects', href: '#projects' },
+    { key: 'nav.certifications', href: '#certifications' },
     { key: 'nav.skills', href: '#skills' },
     { key: 'nav.contact', href: '#contact' },
   ];
