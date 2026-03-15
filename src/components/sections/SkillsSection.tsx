@@ -28,7 +28,7 @@ const SkillsSection = () => {
     },
     {
       titleKey: 'skills.mlops',
-      skills: ['Docker', 'MLOps', 'GitHub Actions'],
+      skills: ['MCP', 'Docker', 'MLOps', 'GitHub Actions'],
       icon: Settings,
     },
     {

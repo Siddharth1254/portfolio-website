@@ -3,6 +3,7 @@ import { FolderGit2 } from 'lucide-react';
 import { GlowingEffect } from '@/components/ui/glowing-effect';
 import { ButtonColorful } from '@/components/ui/button-colorful';
 import { SparklesBackground } from '@/components/ui/sparkles-background';
+import mcpDebuggingAgentThumbnail from '@/assets/mcp-debugging-agent-thumbnail.png';
 import aiColdEmailThumbnail from '@/assets/ai-cold-email-thumbnail.png';
 import sentimentAnalysisThumbnail from '@/assets/sentiment-analysis-thumbnail.png';
 import gamingMarketInsightsThumbnail from '@/assets/gaming-market-insights-thumbnail.png';
@@ -15,20 +16,27 @@ const ProjectsSection = () => {
       titleKey: 'projects.project1.title',
       descKey: 'projects.project1.desc',
       techKey: 'projects.project1.tech',
-      githubUrl: 'https://github.com/Siddharth1254/ai-cold-email-generator',
-      thumbnail: aiColdEmailThumbnail,
+      githubUrl: 'https://github.com/Siddharth1254/mcp-debugging-agent',
+      thumbnail: mcpDebuggingAgentThumbnail,
     },
     {
       titleKey: 'projects.project2.title',
       descKey: 'projects.project2.desc',
       techKey: 'projects.project2.tech',
-      githubUrl: 'https://github.com/Siddharth1254/sentiment-analysis-with-bert',
-      thumbnail: sentimentAnalysisThumbnail,
+      githubUrl: 'https://github.com/Siddharth1254/ai-cold-email-generator',
+      thumbnail: aiColdEmailThumbnail,
     },
     {
       titleKey: 'projects.project3.title',
       descKey: 'projects.project3.desc',
       techKey: 'projects.project3.tech',
+      githubUrl: 'https://github.com/Siddharth1254/sentiment-analysis-with-bert',
+      thumbnail: sentimentAnalysisThumbnail,
+    },
+    {
+      titleKey: 'projects.project4.title',
+      descKey: 'projects.project4.desc',
+      techKey: 'projects.project4.tech',
       githubUrl: 'https://github.com/Siddharth1254/gaming-market-insights',
       thumbnail: gamingMarketInsightsThumbnail,
     },
