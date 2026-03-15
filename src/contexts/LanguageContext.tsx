@@ -155,6 +155,8 @@ const translations: Record<Language, Record<string, string>> = {
     'certifications.title': 'Certifications',
     'certifications.cert1.name': 'Retrieval Augmented Generation (RAG)',
     'certifications.cert1.issuer': 'DeepLearning.AI',
+    'certifications.cert2.name': 'Machine Learning Specialization',
+    'certifications.cert2.issuer': 'DeepLearning.AI & Stanford',
 
     // Contact
     'contact.title': 'Get in Touch',
@@ -313,6 +315,8 @@ const translations: Record<Language, Record<string, string>> = {
     'certifications.title': 'Certifications',
     'certifications.cert1.name': 'Génération Augmentée par Récupération (RAG)',
     'certifications.cert1.issuer': 'DeepLearning.AI',
+    'certifications.cert2.name': 'Spécialisation en Machine Learning',
+    'certifications.cert2.issuer': 'DeepLearning.AI & Stanford',
 
     // Contact
     'contact.title': 'Me Contacter',

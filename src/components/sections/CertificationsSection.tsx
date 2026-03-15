@@ -28,6 +28,12 @@ const CertificationsSection = () => {
       image: '/certificates/rag-certificate.png',
       issuerLogo: null,
     },
+    {
+      nameKey: 'certifications.cert2.name',
+      issuerKey: 'certifications.cert2.issuer',
+      image: '/certificates/ml-specialization.png',
+      issuerLogo: null,
+    },
   ];
 
   return (
