@@ -43,7 +43,7 @@ const SkillsSection = () => {
     },
     {
       titleKey: 'skills.responsible',
-      skills: ['AI Ethics', 'AI Compliance', 'Privacy & Security', 'GDPR, MDR & ISO', 'Data Governance'],
+      skills: ['AI Ethics', 'AI Compliance', 'Privacy & Security', 'Data Governance'],
       icon: Shield,
     },
   ];
