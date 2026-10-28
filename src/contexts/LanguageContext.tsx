@@ -24,14 +24,17 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Siddharth Taurani',
     'hero.subtitle': 'AI and Data Science Student',
     'hero.tagline': 'I design and build end-to-end AI prototypes — from data ingestion and modeling to deployment — with a focus on retrieval systems, LLM orchestration, data pipelines, and real-world applications.',
-    'hero.availability': 'Currently seeking an alternance in AI / ML engineering, Data Science/Analyst starting June 2026.',
+    'hero.availability': 'Currently seeking an alternance in AI / ML engineering, Data Science/Analyst, available immediately.',
     'hero.cta': 'Get in Touch',
+    'hero.alternance.contract': '12–24 month apprenticeship',
+    'hero.alternance.rhythm': '3 weeks company / 1 week school',
+    'hero.alternance.mobility': 'Mobile across France',
 
     // About
     'about.title': 'About Me',
-    'about.description': 'I\'m an AI and Data Science student focused on building applied machine learning and retrieval systems that solve real problems.',
-    'about.paragraph2': 'I enjoy working on projects where AI moves beyond experimentation into something usable — dashboards, automation tools, search systems, or ML pipelines that people can interact with.',
-    'about.paragraph3': 'Currently, I\'m deepening my skills in Retrieval-Augmented Generation (RAG), NL-to-database systems, MLOps workflows, and AI agents for automation.',
+    'about.description': 'I\'m a 4th-year AI and Data Science student at Aivancity Paris. I like to understand what the data says before modelling it: explore, clean, choose features, compare models and measure the results honestly.',
+    'about.paragraph2': 'Since 2025, I have delivered a clinical regulatory-compliance RAG assistant to a client, contributed to a natural-language database query system, and built an orchestration agent inside a RAG pipeline. I also automate business processes with low-code tools (n8n + Claude API).',
+    'about.paragraph3': 'My guiding principle: a model that makes things up is unusable, so I measure quality before delivering, with evaluation, guardrails and audit logs.',
     'about.finalLine': 'I\'m actively looking for an alternance role where I can contribute to real AI systems in production environments.',
     'about.languagesTitle': 'Languages',
     'about.language.french': 'French',
@@ -42,6 +45,8 @@ const translations: Record<Language, Record<string, string>> = {
     'about.proficiency.native': 'Native',
     'about.proficiency.professional': 'Full Professional',
     'about.proficiency.working': 'Limited Working',
+    'about.proficiency.intermediateB1': 'Intermediate (B1)',
+    'about.proficiency.fluentC1': 'Fluent (C1)',
 
     // Education
     'education.title': 'Education',
@@ -65,9 +70,18 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.onsite': 'On-site',
     'experience.remote': 'Remote',
 
+    'experience.cerc.title': 'AI Engineer (Clinical Compliance RAG)',
+    'experience.cerc.company': 'CERC',
+    'experience.cerc.date': 'Jan 2026 - Apr 2026',
+    'experience.cerc.location': 'Île-de-France, France',
+    'experience.cerc.desc1': 'Designed and delivered a clinical regulatory-compliance RAG assistant (MDR, GDPR, ISO) to the client',
+    'experience.cerc.desc2': 'Built ingestion of mixed-format documents with ChromaDB and LlamaParse',
+    'experience.cerc.desc3': 'Developed the FastAPI backend with strict prompt engineering and audit logging',
+    'experience.cerc.desc4': 'Built the React frontend: chat interface and audit-log viewer',
+
     'experience.job1.title': 'AI Engineer',
     'experience.job1.company': 'Pangea Summit',
-    'experience.job1.date': 'Oct 2025 - Present',
+    'experience.job1.date': 'Oct 2025 - Apr 2026',
     'experience.job1.location': 'Île-de-France, France',
     'experience.job1.desc1': 'Built web scrapers to extract and structure real estate-related data from multiple sources',
     'experience.job1.desc2': 'Developed real-time stats and analytics features for user-facing platform',
@@ -143,6 +157,15 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.project4.title': 'Gaming Market Insights',
     'projects.project4.desc': 'Comprehensive data wrangling and EDA project analyzing 16,000+ video game titles. Features data cleaning, temporal/genre/platform analysis, and custom metrics like Market Power Index and Regional Preference Divergence.',
     'projects.project4.tech': 'Python, Pandas, NumPy, Matplotlib, Seaborn',
+    'projects.meetingToAction.title': 'Meeting-to-Action Assistant',
+    'projects.meetingToAction.desc': 'Low-code workflow that turns a meeting transcript into a summary, decisions and assigned actions, with a Slack recap and Google Sheets tracking, without inventing owners or deadlines. Evaluated on 3 tricky French transcripts: 15 of 15 actions found, none invented.',
+    'projects.meetingToAction.tech': 'n8n, Claude API, Slack, Google Sheets, Python',
+    'projects.alternaGenie.title': 'AlternaGenie',
+    'projects.alternaGenie.desc': 'Built at the GDG on Campus "Build with AI 2026" hackathon. From a job posting and a profile (or a PDF CV), generates CV bullets, a cover letter, an outreach email and a LinkedIn note, with a match score. Structured JSON output and automatic retry when the API quota is hit.',
+    'projects.alternaGenie.tech': 'FastAPI, React, Gemini API, Structured Outputs',
+    'projects.studentPerformance.title': 'Student Performance Prediction',
+    'projects.studentPerformance.desc': 'Team ML project: exploratory analysis, feature engineering and comparison of 10 regression models, reaching up to 82.7% R². Absences and previous failures stand out as key factors. Extended with a computer-vision part on MVTec: U-Net defect segmentation and unsupervised clustering.',
+    'projects.studentPerformance.tech': 'Python, Scikit-Learn, XGBoost, U-Net, K-means',
     'projects.viewGithub': 'View on GitHub',
 
     // Skills
@@ -150,7 +173,8 @@ const translations: Record<Language, Record<string, string>> = {
     'skills.programming': 'Programming',
     'skills.ai': 'AI & Machine Learning',
     'skills.data': 'Data',
-    'skills.mlops': 'MLOps & Tools',
+    'skills.automation': 'Automation',
+    'skills.mlops': 'Engineering & Tools',
     'skills.tools': 'Visualization',
     'skills.responsible': 'Responsible AI',
 
@@ -163,7 +187,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact
     'contact.title': 'Get in Touch',
-    'contact.description1': 'I\'m currently seeking an alternance opportunity in AI / ML engineering starting Summer 2026.',
+    'contact.description1': 'I\'m currently seeking an alternance opportunity in AI / ML engineering, available immediately.',
+    'contact.alternanceDetails': 'I\'m looking for a 12 to 24 month apprenticeship contract with a rhythm of 3 weeks at the company and 1 week at school, and I\'m mobile across France.',
     'contact.description2': 'I\'m open to collaborations, applied AI projects, and discussions around data systems, retrieval, and ML deployment.',
     'contact.description3': 'Email or LinkedIn is the fastest way to reach me — I reply quickly.',
     'contact.email': 'Email',
@@ -187,14 +212,17 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title': 'Siddharth Taurani',
     'hero.subtitle': 'Étudiant en IA et Science des Données',
     'hero.tagline': 'Je conçois et développe des prototypes IA de bout en bout — de l\'ingestion de données et la modélisation au déploiement — avec un focus sur les systèmes de recherche, l\'orchestration LLM, les pipelines de données et les applications concrètes.',
-    'hero.availability': 'Actuellement à la recherche d\'une alternance en ingénierie IA / ML, Data Science/Analyst à partir de juin 2026.',
+    'hero.availability': 'Actuellement à la recherche d\'une alternance en ingénierie IA / ML, Data Science/Analyst, disponible immédiatement.',
     'hero.cta': 'Me Contacter',
+    'hero.alternance.contract': 'Alternance de 12 à 24 mois',
+    'hero.alternance.rhythm': '3 semaines entreprise / 1 semaine école',
+    'hero.alternance.mobility': 'Mobile dans toute la France',
 
     // About
     'about.title': 'À Propos de Moi',
-    'about.description': 'Je suis un étudiant en IA et Science des Données, spécialisé dans la construction de systèmes d\'apprentissage automatique appliqué et de recherche qui résolvent des problèmes concrets.',
-    'about.paragraph2': 'J\'aime travailler sur des projets où l\'IA dépasse le stade de l\'expérimentation pour devenir quelque chose d\'utilisable — tableaux de bord, outils d\'automatisation, systèmes de recherche ou pipelines ML avec lesquels les utilisateurs peuvent interagir.',
-    'about.paragraph3': 'Actuellement, j\'approfondis mes compétences en Retrieval-Augmented Generation (RAG), systèmes NL-to-database, workflows MLOps et agents IA pour l\'automatisation.',
+    'about.description': 'Étudiant en 4e année en IA et Data Science à Aivancity Paris, j\'aime comprendre ce que disent les données avant de les modéliser : explorer, nettoyer, choisir les variables, comparer les modèles et mesurer honnêtement leurs résultats.',
+    'about.paragraph2': 'Depuis 2025, j\'ai livré à un client un assistant RAG de conformité réglementaire clinique, contribué à un système d\'interrogation de base de données en langage naturel, et développé un agent d\'orchestration au sein d\'un pipeline RAG. J\'automatise aussi des processus métier avec des outils low-code (n8n + Claude API).',
+    'about.paragraph3': 'Mon principe : un modèle qui invente est inutilisable, donc je mesure la qualité avant de livrer, avec évaluation, garde-fous et journaux d\'audit.',
     'about.finalLine': 'Je recherche activement une alternance où je peux contribuer à de vrais systèmes IA en environnement de production.',
     'about.languagesTitle': 'Langues',
     'about.language.french': 'Français',
@@ -205,6 +233,8 @@ const translations: Record<Language, Record<string, string>> = {
     'about.proficiency.native': 'Natif',
     'about.proficiency.professional': 'Professionnel',
     'about.proficiency.working': 'Intermédiaire',
+    'about.proficiency.intermediateB1': 'Intermédiaire (B1)',
+    'about.proficiency.fluentC1': 'Courant (C1)',
 
     // Education
     'education.title': 'Formation',
@@ -228,9 +258,18 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.onsite': 'Sur site',
     'experience.remote': 'À distance',
 
+    'experience.cerc.title': 'Ingénieur IA (RAG Conformité Clinique)',
+    'experience.cerc.company': 'CERC',
+    'experience.cerc.date': 'Jan 2026 - Avr 2026',
+    'experience.cerc.location': 'Île-de-France, France',
+    'experience.cerc.desc1': 'Conception et livraison au client d\'un assistant RAG de conformité réglementaire clinique (MDR, RGPD, ISO)',
+    'experience.cerc.desc2': 'Ingestion de documents multi-formats avec ChromaDB et LlamaParse',
+    'experience.cerc.desc3': 'Backend FastAPI avec prompt engineering strict et journalisation d\'audit',
+    'experience.cerc.desc4': 'Frontend React : interface de chat et visualiseur des journaux d\'audit',
+
     'experience.job1.title': 'Ingénieur IA',
     'experience.job1.company': 'Pangea Summit',
-    'experience.job1.date': 'Oct 2025 - Présent',
+    'experience.job1.date': 'Oct 2025 - Avr 2026',
     'experience.job1.location': 'Île-de-France, France',
     'experience.job1.desc1': 'Développement de web scrapers pour extraire et structurer des données immobilières',
     'experience.job1.desc2': 'Création de fonctionnalités de statistiques et analyses en temps réel',
@@ -306,6 +345,15 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.project4.title': 'Analyse du Marché du Gaming',
     'projects.project4.desc': 'Projet complet de data wrangling et d\'analyse exploratoire sur 16 000+ jeux vidéo. Inclut nettoyage de données, analyse temporelle/genre/plateforme, et métriques personnalisées comme l\'Indice de Puissance de Marché.',
     'projects.project4.tech': 'Python, Pandas, NumPy, Matplotlib, Seaborn',
+    'projects.meetingToAction.title': 'Assistant Réunion-vers-Actions',
+    'projects.meetingToAction.desc': 'Workflow low-code qui transforme une transcription de réunion en résumé, décisions et actions assignées, avec récap Slack et suivi Google Sheets, sans inventer de responsable ni d\'échéance. Évalué sur 3 transcriptions françaises piégées : 15 actions sur 15 trouvées, aucune inventée.',
+    'projects.meetingToAction.tech': 'n8n, Claude API, Slack, Google Sheets, Python',
+    'projects.alternaGenie.title': 'AlternaGenie',
+    'projects.alternaGenie.desc': 'Réalisé lors du hackathon GDG on Campus « Build with AI 2026 ». À partir d\'une offre et d\'un profil (ou d\'un CV PDF), génère des puces de CV, une lettre de motivation, un email de prospection et une note LinkedIn, avec un score de correspondance. Sortie JSON structurée et relance automatique en cas de quota atteint.',
+    'projects.alternaGenie.tech': 'FastAPI, React, Gemini API, Structured Outputs',
+    'projects.studentPerformance.title': 'Prédiction de la Performance des Élèves',
+    'projects.studentPerformance.desc': 'Projet ML en équipe : analyse exploratoire, feature engineering et comparaison de 10 modèles de régression, jusqu\'à 82,7 % de R². Les absences et les échecs antérieurs ressortent comme facteurs clés. Complété par une partie vision par ordinateur sur MVTec : segmentation de défauts (U-Net) et clustering non supervisé.',
+    'projects.studentPerformance.tech': 'Python, Scikit-Learn, XGBoost, U-Net, K-means',
     'projects.viewGithub': 'Voir sur GitHub',
 
     // Skills
@@ -313,7 +361,8 @@ const translations: Record<Language, Record<string, string>> = {
     'skills.programming': 'Programmation',
     'skills.ai': 'IA & Machine Learning',
     'skills.data': 'Données',
-    'skills.mlops': 'MLOps & Outils',
+    'skills.automation': 'Automatisation',
+    'skills.mlops': 'Ingénierie & Outils',
     'skills.tools': 'Visualisation',
     'skills.responsible': 'IA Responsable',
 
@@ -326,7 +375,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact
     'contact.title': 'Me Contacter',
-    'contact.description1': 'Je recherche actuellement une alternance en ingénierie IA / ML à partir de l\'été 2026.',
+    'contact.description1': 'Je recherche actuellement une alternance en ingénierie IA / ML, disponible immédiatement.',
+    'contact.alternanceDetails': 'Je recherche un contrat d\'apprentissage de 12 à 24 mois, avec un rythme de 3 semaines en entreprise et 1 semaine à l\'école, et je suis mobile dans toute la France.',
     'contact.description2': 'Je suis ouvert aux collaborations, projets d\'IA appliquée et discussions autour des systèmes de données, de la recherche et du déploiement ML.',
     'contact.description3': 'Email ou LinkedIn est le moyen le plus rapide de me joindre — je réponds rapidement.',
     'contact.email': 'Email',

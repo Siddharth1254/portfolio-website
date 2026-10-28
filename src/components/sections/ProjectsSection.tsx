@@ -7,11 +7,28 @@ import mcpDebuggingAgentThumbnail from '@/assets/mcp-debugging-agent-thumbnail.p
 import aiColdEmailThumbnail from '@/assets/ai-cold-email-thumbnail.png';
 import sentimentAnalysisThumbnail from '@/assets/sentiment-analysis-thumbnail.png';
 import gamingMarketInsightsThumbnail from '@/assets/gaming-market-insights-thumbnail.png';
+import meetingToActionThumbnail from '@/assets/meeting-to-action-thumbnail.jpg';
+import alternaGenieThumbnail from '@/assets/alterna-genie-thumbnail.jpg';
+import studentPerformanceThumbnail from '@/assets/student-performance-thumbnail.jpg';
 
 const ProjectsSection = () => {
   const { t } = useLanguage();
 
   const projects = [
+    {
+      titleKey: 'projects.meetingToAction.title',
+      descKey: 'projects.meetingToAction.desc',
+      techKey: 'projects.meetingToAction.tech',
+      githubUrl: 'https://github.com/Siddharth1254/meeting-to-action',
+      thumbnail: meetingToActionThumbnail,
+    },
+    {
+      titleKey: 'projects.alternaGenie.title',
+      descKey: 'projects.alternaGenie.desc',
+      techKey: 'projects.alternaGenie.tech',
+      githubUrl: 'https://github.com/Siddharth1254/alterna-genie-mvp',
+      thumbnail: alternaGenieThumbnail,
+    },
     {
       titleKey: 'projects.project1.title',
       descKey: 'projects.project1.desc',
@@ -25,6 +42,13 @@ const ProjectsSection = () => {
       techKey: 'projects.project2.tech',
       githubUrl: 'https://github.com/Siddharth1254/ai-cold-email-generator',
       thumbnail: aiColdEmailThumbnail,
+    },
+    {
+      titleKey: 'projects.studentPerformance.title',
+      descKey: 'projects.studentPerformance.desc',
+      techKey: 'projects.studentPerformance.tech',
+      githubUrl: 'https://github.com/Siddharth1254/Machine-Learning-Score-Prediction',
+      thumbnail: studentPerformanceThumbnail,
     },
     {
       titleKey: 'projects.project3.title',

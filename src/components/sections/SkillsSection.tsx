@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { SparklesBackground } from '@/components/ui/sparkles-background';
 import { motion } from 'framer-motion';
-import { Code, Brain, Database, BarChart3, Shield, Settings, LucideIcon } from 'lucide-react';
+import { Code, Brain, Database, BarChart3, Shield, Settings, Workflow, LucideIcon } from 'lucide-react';
 
 const SkillsSection = () => {
   const { t } = useLanguage();
@@ -13,32 +13,37 @@ const SkillsSection = () => {
   }[] = [
     {
       titleKey: 'skills.programming',
-      skills: ['Python', 'SQL', 'Linux/Ubuntu'],
+      skills: ['Python', 'SQL (MySQL, SQLite)', 'FastAPI', 'REST APIs', 'React', 'Streamlit', 'Linux/Ubuntu'],
       icon: Code,
     },
     {
       titleKey: 'skills.ai',
-      skills: ['AI Agents', 'NLP', 'LLM & Applications', 'Retrieval-Augmented Generation (RAG)', 'Scikit-Learn'],
+      skills: ['RAG (ChromaDB, LlamaParse)', 'AI Agents', 'MCP', 'Claude, Gemini & Mistral APIs', 'Prompt Engineering', 'Structured Outputs (Tool Use)', 'LLM Evaluation', 'NLP', 'Scikit-Learn', 'XGBoost'],
       icon: Brain,
     },
     {
       titleKey: 'skills.data',
-      skills: ['Data Pipelines', 'Data Wrangling', 'ETL', 'Data Preprocessing'],
+      skills: ['Data Ingestion & Preprocessing', 'Embeddings', 'Web Scraping', 'Data Wrangling', 'EDA', 'Feature Engineering', 'Regression & Clustering', 'Pandas', 'NumPy'],
       icon: Database,
     },
     {
+      titleKey: 'skills.automation',
+      skills: ['n8n (Low-code)', 'Claude API', 'Slack', 'Google Sheets', 'Error Handling & Alerts'],
+      icon: Workflow,
+    },
+    {
       titleKey: 'skills.mlops',
-      skills: ['MCP', 'Docker', 'MLOps', 'GitHub Actions'],
+      skills: ['Docker', 'GitHub Actions', 'Git & GitHub', 'Audit Logging'],
       icon: Settings,
     },
     {
       titleKey: 'skills.tools',
-      skills: ['Power BI', 'Looker Studio', 'MS Excel'],
+      skills: ['Power BI', 'Looker Studio', 'MS Excel', 'Matplotlib'],
       icon: BarChart3,
     },
     {
       titleKey: 'skills.responsible',
-      skills: ['AI Ethics', 'AI Compliance', 'Data Governance'],
+      skills: ['AI Ethics', 'AI Compliance', 'Privacy & Security', 'GDPR, MDR & ISO', 'Data Governance'],
       icon: Shield,
     },
   ];

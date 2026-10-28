@@ -12,6 +12,15 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
+      titleKey: 'experience.cerc.title',
+      companyKey: 'experience.cerc.company',
+      dateKey: 'experience.cerc.date',
+      locationKey: 'experience.cerc.location',
+      descKeys: ['experience.cerc.desc1', 'experience.cerc.desc2', 'experience.cerc.desc3', 'experience.cerc.desc4'],
+      contractType: 'aiClinic',
+      workMode: 'remote',
+    },
+    {
       titleKey: 'experience.job1.title',
       companyKey: 'experience.job1.company',
       dateKey: 'experience.job1.date',

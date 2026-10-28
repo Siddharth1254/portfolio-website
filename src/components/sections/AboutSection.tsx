@@ -7,8 +7,8 @@ const AboutSection = () => {
   const { t } = useLanguage();
 
   const languages = [
-    { nameKey: 'about.language.french', proficiencyKey: 'about.proficiency.working' },
-    { nameKey: 'about.language.english', proficiencyKey: 'about.proficiency.professional' },
+    { nameKey: 'about.language.french', proficiencyKey: 'about.proficiency.intermediateB1' },
+    { nameKey: 'about.language.english', proficiencyKey: 'about.proficiency.fluentC1' },
     { nameKey: 'about.language.hindi', proficiencyKey: 'about.proficiency.native' },
     { nameKey: 'about.language.sindhi', proficiencyKey: 'about.proficiency.native' },
     { nameKey: 'about.language.gujarati', proficiencyKey: 'about.proficiency.professional' },

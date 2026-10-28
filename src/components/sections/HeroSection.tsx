@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ArrowDown, Briefcase } from 'lucide-react';
+import { ArrowDown, Briefcase, CalendarDays, FileText, MapPin } from 'lucide-react';
 import { AuroraBackground } from '@/components/ui/aurora-background';
 
 const HeroSection = () => {
@@ -38,7 +38,7 @@ const HeroSection = () => {
         </p>
 
         {/* Availability line */}
-        <p className="flex items-center justify-start sm:justify-center gap-2.5 text-base text-foreground/80 font-medium max-w-2xl mx-auto mb-10 fade-in-up fade-in-up-delay-3">
+        <p className="flex items-center justify-start sm:justify-center gap-2.5 text-base text-foreground/80 font-medium max-w-2xl mx-auto mb-4 fade-in-up fade-in-up-delay-3">
           <Briefcase size={16} className="shrink-0 text-secondary/70" />
           <span className="relative flex h-3 w-3 shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -46,6 +46,23 @@ const HeroSection = () => {
           </span>
           <span>{t('hero.availability')}</span>
         </p>
+
+        {/* Alternance details */}
+        <div className="flex flex-wrap justify-start sm:justify-center gap-2 max-w-2xl mx-auto mb-10 fade-in-up fade-in-up-delay-3">
+          {[
+            { icon: FileText, key: 'hero.alternance.contract' },
+            { icon: CalendarDays, key: 'hero.alternance.rhythm' },
+            { icon: MapPin, key: 'hero.alternance.mobility' },
+          ].map(({ icon: Icon, key }) => (
+            <span
+              key={key}
+              className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-full bg-secondary/10 text-foreground/80 border border-secondary/20 font-medium"
+            >
+              <Icon size={14} className="shrink-0 text-secondary" />
+              {t(key)}
+            </span>
+          ))}
+        </div>
         
         {/* CTA Button - Navy with maroon hover effect */}
         <a

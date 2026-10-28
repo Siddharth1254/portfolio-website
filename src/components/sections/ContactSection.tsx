@@ -16,6 +16,7 @@ const ContactSection = () => {
 
         <div className="text-lg text-muted-foreground mb-10 leading-relaxed space-y-4 text-left">
           <p>{t('contact.description1')}</p>
+          <p>{t('contact.alternanceDetails')}</p>
           <p>{t('contact.description2')}</p>
           <p>{t('contact.description3')}</p>
         </div>
