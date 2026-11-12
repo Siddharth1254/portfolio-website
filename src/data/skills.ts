@@ -37,7 +37,7 @@ export const SKILLS: SkillGroup[] = [
     },
   },
   {
-    title: { en: 'Engineering & Tools', fr: 'Ingénierie & Outils' },
+    title: { en: 'Engineering & Tools', fr: 'Ingénierie & outils' },
     items: {
       en: ['Docker', 'GitHub Actions', 'Git & GitHub', 'Audit Logging'],
       fr: ['Docker', 'GitHub Actions', 'Git & GitHub', "Journalisation d'audit"],
@@ -51,7 +51,7 @@ export const SKILLS: SkillGroup[] = [
     },
   },
   {
-    title: { en: 'Responsible AI', fr: 'IA Responsable' },
+    title: { en: 'Responsible AI', fr: 'IA responsable' },
     wide: true,
     items: {
       en: ['AI Ethics', 'AI Compliance', 'Privacy & Security', 'Data Governance'],

@@ -2,7 +2,7 @@ import type { Lang, RichText } from './types';
 
 const en = {
   'meta.title': 'Siddharth Taurani — Portfolio',
-  'meta.description': 'Siddharth Taurani — AI/ML Engineer portfolio',
+  'meta.description': 'Portfolio of Siddharth Taurani, AI & Data Science student at aivancity Paris, looking for an alternance.',
 
   'nav.about': 'About',
   'nav.experience': 'Experience',
@@ -98,7 +98,7 @@ type Strings = { [K in StringKey]: (typeof en)[K] };
 
 const fr: Strings = {
   'meta.title': 'Siddharth Taurani — Portfolio',
-  'meta.description': "Siddharth Taurani — Portfolio d'ingénieur IA/ML",
+  'meta.description': "Portfolio de Siddharth Taurani, étudiant en IA & Data Science à aivancity Paris, en recherche d'alternance.",
 
   'nav.about': 'À propos',
   'nav.experience': 'Expérience',
@@ -121,11 +121,11 @@ const fr: Strings = {
   'toast.copied': 'Adresse e-mail copiée',
 
   'hero.typedPrefix': 'Je conçois ',
-  'hero.intro': "Je conçois et développe des prototypes IA de bout en bout — des données au déploiement — avec un focus sur la recherche d'information, l'orchestration de LLM et les usages concrets.",
+  'hero.intro': "Je crée des prototypes d'IA de bout en bout — de la donnée au déploiement — en mettant l'accent sur la recherche d'information, l'orchestration de LLM et les cas d'usage concrets.",
   'hero.sub': ['Étudiant en 4e année en IA & Data Science à ', { b: 'aivancity Paris' }, '.'],
   'hero.avail': ["À la recherche d'une ", { b: 'alternance de 12 à 24 mois' }, ' en ingénierie IA ou Data Science · ', { b: 'disponible dès maintenant' }],
-  'hero.availSmall': '3 semaines entreprise / 1 semaine école · mobile dans toute la France',
-  'hero.ctaJourney': 'Démarrer le voyage ↓',
+  'hero.availSmall': '3 semaines en entreprise / 1 semaine à l\'école · mobile partout en France',
+  'hero.ctaJourney': 'Commencer le voyage ↓',
   'hero.ctaContact': 'Me contacter',
   'hero.scroll': 'DÉFILER',
 
@@ -134,16 +134,16 @@ const fr: Strings = {
   'about.photoAlt': 'Portrait de Siddharth Taurani',
   'about.photoEmpty': 'VOTRE PHOTO ICI',
   'about.statement': 'Bien construire. Comprendre clairement. Progresser pas à pas.',
-  'about.p1': ['Je suis ', { b: 'étudiant en 4e année en IA et Data Science à aivancity Paris' }, ". Ces dernières années, j'ai livré des ", { b: 'projets de Clinique IA pour de vraies entreprises' }, ", chacun pensé autour des besoins de l'entreprise, effectué des stages et des missions en contrat, contribué à des projets d'équipe, tout en continuant à développer les miens."],
-  'about.p2': ['Mes projets naviguent entre ', { b: 'agents IA et automatisation' }, ' (outils low-code comme n8n compris), ', { b: 'assistants RAG et de connaissances' }, ', et ', { b: 'data science' }, " : des données brutes à l'analyse, aux modèles et aux tableaux de bord que l'on lit vraiment. Je mène aussi en ce moment un projet de recherche d'un an sur la fiabilité des LLM."],
-  'about.p3': "J'aime décomposer les sujets complexes en petites parties jusqu'au déclic. Ce moment est ce que je préfère dans l'apprentissage.",
+  'about.p1': ['Je suis ', { b: 'étudiant en 4e année en IA et Data Science à aivancity Paris' }, ". Ces dernières années, j'ai mené des ", { b: 'projets Clinique IA pour de vraies entreprises' }, ", chacun conçu selon leurs besoins. J'ai aussi effectué des stages et des missions en contrat, contribué à des projets d'équipe et continué à développer les miens."],
+  'about.p2': ['Mes projets vont des ', { b: "agents IA et de l'automatisation" }, ' (y compris des outils low-code comme n8n) aux ', { b: 'assistants RAG et de connaissances' }, ', en passant par la ', { b: 'data science' }, "\u00a0: des données brutes à l'analyse, aux modèles et aux tableaux de bord qu'on lit vraiment. En parallèle, je mène un projet de recherche d'un an sur la fiabilité des LLM."],
+  'about.p3': "J'aime décomposer les sujets complexes en petites parties jusqu'à ce que tout s'éclaire. C'est le moment que je préfère quand j'apprends.",
   'about.terminalTitle': 'terminal — whoami',
   'about.languages': 'Langues',
 
   'exp.title': 'Mes expériences',
-  'exp.note': ['La ', { b: 'Clinique IA' }, " est un programme de conseil pratique où les étudiants travaillent sur des projets IA réels pour des entreprises, faisant le lien entre l'apprentissage académique et l'application industrielle."],
+  'exp.note': ['La ', { b: 'Clinique IA' }, " est un programme de conseil où les étudiants mènent de vrais projets d'IA pour des entreprises, entre apprentissage académique et mise en pratique professionnelle."],
   'exp.introNum': 'EXPÉRIENCE',
-  'exp.introTitle': "Le voyage jusqu'ici",
+  'exp.introTitle': "Mon parcours jusqu'ici",
   'exp.introText': 'Chaque planète est une escale. Chaque escale, un chapitre.',
   'exp.launch': 'Lancer le voyage\u00a0\u00a0▸',
   'exp.introHint': 'OU DÉFILEZ DANS CE CADRE POUR VOLER · EN DEHORS POUR PASSER',
@@ -161,14 +161,14 @@ const fr: Strings = {
   'proj.num': 'PROJETS',
   'proj.title1': 'Sélection',
   'proj.title2': 'de projets',
-  'proj.hint': "Faites défiler latéralement, glissez ou utilisez les flèches. Cliquez sur une carte pour l'ouvrir.",
-  'proj.cardAria': 'Projet {n} : {name}',
+  'proj.hint': "Faites défiler sur le côté, glissez ou utilisez les flèches. Cliquez sur une carte pour l'ouvrir.",
+  'proj.cardAria': 'Projet {n}\u00a0: {name}',
   'proj.prev': 'Projet précédent',
   'proj.next': 'Projet suivant',
   'proj.details': 'Détails du projet',
   'proj.label': 'PROJET',
   'proj.close': 'Fermer',
-  'proj.cover': 'Couverture animée : {name}',
+  'proj.cover': 'Couverture animée\u00a0: {name}',
   'proj.github': 'Voir sur GitHub ↗',
 
   'skills.num': 'COMPÉTENCES',
@@ -182,7 +182,7 @@ const fr: Strings = {
   'cert.alt': 'Certificat {name}',
 
   'contact.title': 'Me contacter',
-  'contact.text': "Je recherche une alternance de 12 à 24 mois en ingénierie IA / ML, disponible dès maintenant : 3 semaines en entreprise, 1 semaine à l'école, et prêt à m'installer partout en France. Je suis aussi ouvert aux collaborations, aux projets d'IA appliquée et aux échanges autour des systèmes de données, de la recherche d'information et du déploiement ML. L'e-mail ou LinkedIn est le moyen le plus rapide de me joindre — je réponds rapidement.",
+  'contact.text': "Je recherche une alternance de 12 à 24 mois en ingénierie IA / ML, disponible dès maintenant\u00a0: 3 semaines en entreprise, 1 semaine à l'école, et prêt à m'installer partout en France. Je suis aussi ouvert aux collaborations, aux projets d'IA appliquée et aux échanges autour des systèmes de données, de la recherche d'information et du déploiement ML. L'e-mail ou LinkedIn est le moyen le plus rapide de me joindre — je réponds vite.",
   'contact.copy': 'Copier',
 
   'notFound.text': 'Page introuvable',

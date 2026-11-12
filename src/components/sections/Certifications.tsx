@@ -1,25 +1,41 @@
-import { useRef, useState, type KeyboardEvent } from 'react';
+import { useRef, useState, type KeyboardEvent, type PointerEvent } from 'react';
 import { SplitHeading } from '@/components/common';
 import { CERTS, type Certification } from '@/data/certifications';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { useReveal } from '@/lib/reveal';
 
-/* Hover (or tap / Enter) to reveal the certificate; once revealed, a click opens the full certificate. */
+/* Mouse: CSS :hover flips; click opens.
+   Touch: first tap flips (.on), second tap opens.
+   Keyboard: Enter flips, Enter again opens. PNG fallback until PDFs are added. */
 function CertCard({ cert }: { cert: Certification }) {
   const { t, pick } = useLanguage();
   const [ref, shown] = useReveal<HTMLDivElement>();
   const [on, setOn] = useState(false);
-  const hovering = useRef(false);
+  const pointerType = useRef<string>('mouse');
   const name = pick(cert.name);
 
   const open = () => window.open(cert.pdf ?? cert.fullImage, '_blank', 'noopener');
-  const activate = () => (on || hovering.current ? open() : setOn(true));
-  const onKey = (e: KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      if (on) open();
-      else setOn(true);
+
+  const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
+    pointerType.current = e.pointerType;
+  };
+
+  const onActivate = () => {
+    /* mouse: hover already reveals; click opens immediately */
+    if (pointerType.current === 'mouse') {
+      open();
+      return;
     }
+    /* touch / pen: first tap flips, second opens */
+    if (on) open();
+    else setOn(true);
+  };
+
+  const onKey = (e: KeyboardEvent<HTMLDivElement>) => {
+    if (e.key !== 'Enter') return;
+    e.preventDefault();
+    if (on) open();
+    else setOn(true);
   };
 
   return (
@@ -29,11 +45,10 @@ function CertCard({ cert }: { cert: Certification }) {
       tabIndex={0}
       role="button"
       aria-label={t('cert.aria', { name })}
-      onClick={activate}
+      onPointerDown={onPointerDown}
+      onClick={onActivate}
       onKeyDown={onKey}
       onBlur={() => setOn(false)}
-      onPointerEnter={(e) => { hovering.current = e.pointerType === 'mouse'; }}
-      onPointerLeave={() => { hovering.current = false; }}
     >
       <div className="flip-in">
         <div className="fface front glass">

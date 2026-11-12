@@ -28,3 +28,7 @@ dist-ssr
 
 # Cursor
 .cursor
+
+# Local design reference + archived old site (not for deploy)
+reference/
+_old-site/

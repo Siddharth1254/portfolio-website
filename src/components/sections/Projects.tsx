@@ -196,7 +196,7 @@ export function Projects() {
         </div>
         <div className="pctrl glass">
           <button type="button" className="arrow" id="pPrev" aria-label={t('proj.prev')} onClick={() => ctl.current?.turn(-1)}>←</button>
-          <div className="pinfo"><span className="mono" id="pCount" ref={countRef}>01 / {pad(P)}</span><b id="pName" ref={nameRef}>{PROJECTS[0].name}</b></div>
+          <div className="pinfo"><span className="mono" id="pCount" ref={countRef}>01 / {pad(P)}</span><b id="pName" ref={nameRef}>—</b></div>
           <button type="button" className="arrow" id="pNext" aria-label={t('proj.next')} onClick={() => ctl.current?.turn(1)}>→</button>
         </div>
         <div className={`pback${detail.shown ? ' show' : ''}`} id="pback" onClick={() => ctl.current?.close()} />

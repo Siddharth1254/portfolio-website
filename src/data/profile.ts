@@ -2,7 +2,7 @@ import type { Localized } from '@/i18n/types';
 
 export const TYPED_WORDS: Localized<string[]> = {
   en: ['AI agents.', 'RAG assistants.', 'automations.', 'ML models.', 'data pipelines.', 'dashboards people read.'],
-  fr: ['des agents IA.', 'des assistants RAG.', 'des automatisations.', 'des modèles de ML.', 'des pipelines de données.', 'des dashboards lisibles.'],
+  fr: ['des agents IA.', 'des assistants RAG.', 'des automatisations.', 'des modèles de ML.', 'des pipelines de données.', 'des dashboards qu\'on lit vraiment.'],
 };
 
 export interface SpokenLanguage {
@@ -15,9 +15,9 @@ export interface SpokenLanguage {
 export const LANGUAGES: SpokenLanguage[] = [
   { name: { en: 'French', fr: 'Français' }, level: { en: 'Intermediate (B1)', fr: 'Intermédiaire (B1)' }, value: 0.55 },
   { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Fluent (C1)', fr: 'Courant (C1)' }, value: 0.9 },
-  { name: { en: 'Hindi', fr: 'Hindi' }, level: { en: 'Native', fr: 'Natif' }, value: 1 },
-  { name: { en: 'Sindhi', fr: 'Sindhi' }, level: { en: 'Native', fr: 'Natif' }, value: 1 },
-  { name: { en: 'Gujarati', fr: 'Gujarati' }, level: { en: 'Full Professional', fr: 'Professionnel' }, value: 0.92 },
+  { name: { en: 'Hindi', fr: 'Hindi' }, level: { en: 'Native', fr: 'Langue maternelle' }, value: 1 },
+  { name: { en: 'Sindhi', fr: 'Sindhi' }, level: { en: 'Native', fr: 'Langue maternelle' }, value: 1 },
+  { name: { en: 'Gujarati', fr: 'Gujarati' }, level: { en: 'Full Professional', fr: 'Maîtrise professionnelle' }, value: 0.92 },
 ];
 
 export interface EducationEntry {
@@ -31,18 +31,18 @@ export interface EducationEntry {
 
 export const EDUCATION: EducationEntry[] = [
   {
-    title: { en: 'Programme Grande École in AI and Data Science', fr: 'Programme Grande École en IA et Science des Données' },
+    title: { en: 'Programme Grande École in AI and Data Science', fr: 'Programme Grande École en IA et Data Science' },
     school: 'aivancity Paris-Cachan',
     schoolUrl: 'https://www.aivancity.ai/',
     place: { en: 'Paris, France', fr: 'Paris, France' },
-    when: { en: 'Sept 2023 – June 2028', fr: 'Sept 2023 – Juin 2028' },
+    when: { en: 'Sept 2023 – June 2028', fr: 'sept. 2023 – juin 2028' },
     current: true,
   },
   {
-    title: { en: 'High School Diploma', fr: "Diplôme de Fin d'Études Secondaires" },
+    title: { en: 'High School Diploma', fr: "Diplôme de fin d'études secondaires" },
     school: 'Zydus School for Excellence',
     place: { en: 'Ahmedabad, India', fr: 'Ahmedabad, Inde' },
-    when: { en: 'Sept 2011 – June 2022', fr: 'Sept 2011 – Juin 2022' },
+    when: { en: 'Sept 2011 – June 2022', fr: 'sept. 2011 – juin 2022' },
   },
 ];
 
