@@ -6,6 +6,7 @@
     <title>Siddharth Taurani — Portfolio</title>
     <meta name="description" content="Siddharth Taurani — AI/ML Engineer portfolio" />
     <meta name="author" content="Siddharth Taurani" />
+    <meta name="theme-color" content="#04050d" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Siddharth Taurani — Portfolio" />
@@ -22,6 +23,31 @@
   </head>
 
   <body>
+    <div id="loader" aria-hidden="true">
+      <div class="count"><span id="lc">0</span><span id="lp">%</span></div>
+      <div class="lbl mono"><span id="ll">loading embeddings…</span><span>siddharth.taurani / portfolio</span></div>
+      <div class="bar" id="lb"></div>
+    </div>
+    <script>
+      /* Applies the saved theme and language before the first paint (no flash of the wrong theme),
+         and skips the loader after the first visit of the session or with reduced motion. */
+      (function () {
+        var d = document, theme = null, lang = null, seen = false;
+        try { theme = localStorage.getItem('st-theme'); lang = localStorage.getItem('st-lang'); seen = sessionStorage.getItem('st-loaded') === '1'; } catch (e) {}
+        if (theme === 'light') d.body.classList.add('light');
+        if (lang !== 'en' && lang !== 'fr') lang = (navigator.language || '').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+        d.documentElement.lang = lang;
+        var loader = d.getElementById('loader');
+        if (seen || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) loader.parentNode.removeChild(loader);
+        if (lang === 'fr') {
+          var label = d.getElementById('ll'); if (label) label.textContent = 'chargement des embeddings…';
+          var desc = "Siddharth Taurani — Portfolio d'ingénieur IA/ML";
+          ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]'].forEach(function (s) {
+            var m = d.querySelector(s); if (m) m.setAttribute('content', desc);
+          });
+        }
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
