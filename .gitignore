@@ -31,4 +31,5 @@ dist-ssr
 
 # Local design reference + archived old site (not for deploy)
 reference/
+design-inspiration/
 _old-site/
