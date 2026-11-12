@@ -1,23 +1,25 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Nav } from '@/components/Nav';
+import { Sky } from '@/components/Sky';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
-  }, [location.pathname]);
-
+  const { t } = useLanguage();
   return (
-    <div className="flex min-h-screen items-center justify-center bg-muted">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
-          Return to Home
-        </a>
-      </div>
-    </div>
+    <>
+      <Sky />
+      <Nav />
+      <main>
+        <section className="block" style={{ minHeight: '100vh', display: 'grid', placeItems: 'center', textAlign: 'center' }}>
+          <div>
+            <div className="shead">
+              <div className="num mono">404</div>
+              <h2>{t('notFound.text')}</h2>
+            </div>
+            <a className="btn primary" href="/">{t('notFound.back')}</a>
+          </div>
+        </section>
+      </main>
+    </>
   );
 };
 
